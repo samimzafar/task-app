@@ -1,8 +1,8 @@
 // src/App.tsx
 import React, { useState } from 'react';
-import { Movie, Review } from './types';
 import AddMovie from './Components/AddMovie';
 import MovieList from './Components/MovieList';
+import { Movie, Review } from './types';
 
 const App: React.FC = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
@@ -24,7 +24,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold mb-4">Movie Library</h1>
       <AddMovie onAddMovie={addMovie} />
       <MovieList movies={movies} onDelete={deleteMovie} onAddReview={addReview} />
     </div>
