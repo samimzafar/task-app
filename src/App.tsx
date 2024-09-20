@@ -84,14 +84,10 @@ const App: FC = () => {
             </TabPanels>
           </Tabs>
         </div>
-
-        {/* Styled SearchBook Section */}
         <div className='w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg mb-10'>
           <h2 className='text-xl font-semibold text-gray-800 mb-4 text-center'>Search Books</h2>
           <SearchBook />
         </div>
-
-        {/* Styled Statistics Section */}
         <div className='w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg'>
           <h2 className='text-xl font-semibold text-gray-800 mb-4 text-center'>Statistics</h2>
           <Statistics />

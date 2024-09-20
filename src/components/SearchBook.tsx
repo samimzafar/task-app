@@ -1,34 +1,3 @@
-// import React, { FC, useState } from 'react'
-// import { useBookContext } from '../context/BookContext'
-// import { Book } from '../Utils/types'
-// const SearchBook: FC = () => {
-//     const { searchBooks } = useBookContext()
-//     const [query, setQuery] = useState('')
-//     const [results, setResults] = useState<Book[]>([])
-//     const handleSearch = () => {
-//         const searchResults = searchBooks(query)
-//         setResults(searchResults)
-//     }
-//     return (
-//         <div className=''>
-//             <input type="text" placeholder='Search' value={query} onChange={event => setQuery(event.target.value)} />
-//             <button onClick={handleSearch}>Search</button>
-//             <div>
-//                 {results.map((book: Book) => (
-//                     <div key={book.ISBN}>
-//                         <h3>{book.title}</h3>
-//                         <p>{book.author}</p>
-//                         <p>{book.publicationYear}</p>
-//                         <p>{book.genre}</p>
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default SearchBook
-
 import React, { FC, useState } from 'react'
 import { useBookContext } from '../context/BookContext'
 import { Book } from '../Utils/types'
